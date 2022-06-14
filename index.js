@@ -4,7 +4,7 @@ const editals = require ('./src/data/edital.json');
 const hotNews = require ('./src/data/hotNews.json');
 const generalNews = require ('./src/data/0generalNews.json');
 const bannersURL = require ('./src/data/bannersURL.json');
-const generalsnews1 = require ('./src/data/1generalNews.json')
+const generalsNews1 = require ('./src/data/1generalNews.json')
 const PORT = process.env.PORT || 3000;
 
 server.get('/', (req,res) => {
@@ -25,11 +25,11 @@ server.get('/hotNews', (req,res) =>{
     return res.json(hotNews)
 });
 
-server.get('/0generalNews', (req,res) =>{
+server.get('/generalNews0', (req,res) =>{
     return res.json(generalNews)
 });
 
-server.get('/1generalNews', (req,res) =>{
+server.get('/generalNews1', (req,res) =>{
     return res.json(generalNews1)
 });
 
