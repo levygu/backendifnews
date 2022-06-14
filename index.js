@@ -4,6 +4,13 @@ const editals = require ('./src/data/edital.json');
 const hotNews = require ('./src/data/hotNews.json');
 const generalNews = require ('./src/data/generalNews.json');
 
+server.get('/', (req,res) => {
+    return res.json({
+        teste: 'teste API'
+    })
+})
+
+
 server.get('/editals', (req,res) => {
     return res.json(editals)
 });
